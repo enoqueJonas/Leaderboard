@@ -3,7 +3,7 @@ import './index.css';
 const scoresBodyDiv = document.querySelector('.recent-scores-body');
 const players = [
   {
-    name: 'Name: ',
+    name: 'Name',
     score: 100,
   },
   {
@@ -11,23 +11,23 @@ const players = [
     score: 30,
   },
   {
-    name: 'Name: ',
+    name: 'Name',
     score: 55,
   },
   {
-    name: 'Name: ',
+    name: 'Name',
     score: 87,
   },
   {
-    name: 'Name: ',
+    name: 'Name',
     score: 12,
   },
   {
-    name: 'Name: ',
+    name: 'Name',
     score: 233,
   },
   {
-    name: 'Name: ',
+    name: 'Name',
     score: 74,
   },
 ];
