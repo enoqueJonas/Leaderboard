@@ -1,101 +1,100 @@
 body {
-    box-sizing: border-box;
-  }
-  
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 40em;
-    width: 88em;
-    left: 0;
-  }
-  
-  .title {
-    width: 22em;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 3.5em;
-  }
-  
-  .leaderboard-body {
-    display: flex;
-    flex-direction: row;
-    width: 60em;
-  }
-  
-  .recent-scores {
-    display: flex;
-    flex-direction: column;
-    width: 30em;
-  }
-  
-  .recent-scores-header {
-    display: flex;
-    flex-direction: row;
-    width: 30em;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .recent-scores-title {
-    font-size: 2.5em;
-  }
-  
-  .button {
-    width: 130px;
-    height: 60px;
-    margin: 5px;
-    box-shadow: 2px 2px 2px black;
-  }
-  
-  .recent-scores-body {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 2px 2px black;
-  }
-  
-  .player {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    height: 50px;
-    margin: 0;
-    align-items: center;
-    padding: 2px;
-  }
-  
-  .grey {
-    background-color: rgba(0, 0, 0, 0.25);
-  }
-  
-  .add-score {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30em;
-  }
-  
-  .add-score-title {
-    font-size: 2.5em;
-    display: flex;
-    justify-content: center;
-    width: 10em;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 16.8em;
-    height: 24.7em;
-  }
-  
-  .input {
-    width: 260px;
-    height: 40px;
-    margin-bottom: 40px;
-  }
-  
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40em;
+  width: 88em;
+  left: 0;
+}
+
+.title {
+  width: 22em;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 3.5em;
+}
+
+.leaderboard-body {
+  display: flex;
+  flex-direction: row;
+  width: 60em;
+}
+
+.recent-scores {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+}
+
+.recent-scores-header {
+  display: flex;
+  flex-direction: row;
+  width: 30em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-scores-title {
+  font-size: 2.5em;
+}
+
+.button {
+  width: 130px;
+  height: 60px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.recent-scores-body {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px black;
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  height: 50px;
+  margin: 0;
+  align-items: center;
+  padding: 2px;
+}
+
+.grey {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30em;
+}
+
+.add-score-title {
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  width: 10em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 16.8em;
+  height: 24.7em;
+}
+
+.input {
+  width: 260px;
+  height: 40px;
+  margin-bottom: 40px;
+}
