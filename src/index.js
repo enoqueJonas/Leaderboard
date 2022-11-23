@@ -1,4 +1,6 @@
 import './index.css';
+import { btnSubmit, btnRefresh, nameInput, scoreInput } from './htmlElements.js';
+import { postScore, getScore } from './api';
 
 const scoresBodyDiv = document.querySelector('.recent-scores-body');
 const players = [
@@ -32,12 +34,37 @@ const players = [
   },
 ];
 
+async function createGame(url) {
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    mode: 'no-cors',
+    body: {
+      "name": "Moneting.net"
+    },
+  });
+  return response.json();
+}
+
 const loadPlayers = () => {
   let playersList = '';
-  players.forEach((player, index) => {
-    playersList += `<p class="player ${index % 2 !== 0 ? 'grey' : ''}">${player.name}: ${player.score}</p>`;
+  let play = getScore();
+  console.log(play)
+  play.forEach((player, index) => {
+    playersList += `<p class="player ${index % 2 !== 0 ? 'grey' : ''}">${player.user}: ${player.score}</p>`;
   });
   scoresBodyDiv.innerHTML = playersList;
 };
 
+const btnSubmitEvent = () => {
+  let player = {};
+  player.user = nameInput.value;
+  player.score = Number(scoreInput.value);
+  postScore(player).then(data => console.log(data));
+}
+
 window.onload = loadPlayers;
+btnSubmit.addEventListener('click', btnSubmitEvent);
+btnRefresh.addEventListener('click', loadPlayers)
