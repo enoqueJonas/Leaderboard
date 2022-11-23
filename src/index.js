@@ -7,7 +7,7 @@ const players = [
     score: 100,
   },
   {
-    name: 'Name: ',
+    name: 'Name',
     score: 30,
   },
   {
@@ -35,7 +35,7 @@ const players = [
 const loadPlayers = () => {
   let playersList = '';
   players.forEach((player, index) => {
-    playersList += `<p class="player ${index % 2 === 0 ? 'white' : 'grey'}">${player.name}: ${player.score}</p>`;
+    playersList += `<p class="player ${index % 2 !== 0 ? 'grey' : ''}">${player.name}: ${player.score}</p>`;
   });
   scoresBodyDiv.innerHTML = playersList;
 };
