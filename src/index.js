@@ -20,6 +20,8 @@ const btnSubmitEvent = () => {
   player.score = Number(scoreInput.value);
   player.user = nameInput.value;
   postScore(player);
+  nameInput.value = '';
+  scoreInput.value = '';
 };
 
 window.onload = loadPlayers;
