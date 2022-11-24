@@ -27,6 +27,5 @@ export const getScore = async () => {
         redirect: 'follow',
         referrerPolicy: 'no-referrer',
     }).then(resp => resp.json()).catch(err => err);
-    console.log(response.result)
     return response.result;
 }
