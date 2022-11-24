@@ -31,6 +31,12 @@ body {
   width: 30em;
 }
 
+.fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .recent-scores-header {
   display: flex;
   flex-direction: row;
