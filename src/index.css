@@ -1,5 +1,17 @@
 body {
   box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  color: #00c1d4;
+  ;
+}
+
+h2 {
+  color: #00c1d4;
+  ;
 }
 
 .wrapper {
@@ -23,18 +35,23 @@ body {
   display: flex;
   flex-direction: row;
   width: 60em;
+  box-shadow: 2px 2px 2px 2px #00c1d4;
+  min-height: 36em;
+  height: auto;
 }
 
 .recent-scores {
   display: flex;
   flex-direction: column;
   width: 30em;
+  margin-left: 75px;
 }
 
 .fill {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #00c1d4;
 }
 
 .recent-scores-header {
@@ -53,13 +70,28 @@ body {
   width: 130px;
   height: 60px;
   margin: 5px;
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px #00c1d4;
+  border: #a6e3e9;
+  background-color: #a6e3e9;
+  border-radius: 7px;
+  color: rgba(0, 0, 0, .6);
+  transition: all .2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #e3fdfd;
+  transform: scale(1.07);
 }
 
 .recent-scores-body {
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 2px black;
+  transition: all .2s ease-in-out;
+}
+
+.recent-scores-body:hover {
+  transform: scale(1.1);
 }
 
 .player {
@@ -70,10 +102,21 @@ body {
   margin: 0;
   align-items: center;
   padding: 2px;
+  color: rgba(0, 0, 0, .8);
+  transition: all .2s ease-in-out;
+}
+
+.player:hover {
+  transform: scale(1.1);
 }
 
 .grey {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #a6e3e9;
+}
+
+.white {
+  background-color: #e3fdfd;
+  ;
 }
 
 .add-score {
@@ -103,4 +146,6 @@ body {
   width: 260px;
   height: 40px;
   margin-bottom: 40px;
+  border-radius: 7px;
+  background-color: #e3fdfd;
 }

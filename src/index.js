@@ -10,7 +10,7 @@ const loadPlayers = async () => {
   let playersList = '';
   const play = await getScore();
   play.forEach((player, index) => {
-    playersList += `<p class="player ${index % 2 !== 0 ? 'grey' : ''}">${player.user}: ${player.score}</p>`;
+    playersList += `<p class="player ${index % 2 !== 0 ? 'grey' : 'white'}">${player.user}: ${player.score}</p>`;
   });
   scoresBodyDiv.innerHTML = playersList;
 };
