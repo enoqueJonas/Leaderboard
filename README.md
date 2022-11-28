@@ -93,7 +93,7 @@ In order to run this project you need:
 👤 **Enoque Jonas**
 
 - GitHub: [@enoqueJonas](https://github.com/enoqueJonas)
-- Twitter: [@enoque_jonas](https://twitter.com/enoque_jonas)
+- Twitter: [@enoque_jonas](https://twitter.com/_enoqueJonas)
 - LinkedIn: [@Enoque Macanda](https://www.linkedin.com/mwlite/in/enoque-macanda) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
